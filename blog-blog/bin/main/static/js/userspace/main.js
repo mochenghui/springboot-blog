@@ -75,6 +75,7 @@ $(function() {
 						 if (data.success) {
 							// 成功后，置换头像图片
 							 $(".blog-avatar").attr("src", data.avatarUrl);
+							 location.reload();
 						 } else {
 							 oastr.error("error!");
 						 }
